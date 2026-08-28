@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Fluck Ledger</title>
+<style>
+  :root {
+    --bg: #FDF7EF;
+    --card: #FFFFFF;
+    --ink: #3A2E22;
+    --muted: #7A6A57;
+    --accent: #B5651D;
+    --line: #EADDCB;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 32px 20px 64px; }
+  .badge {
+    display: inline-block;
+    background: #F6E7D4;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: 4px 12px;
+    margin-bottom: 12px;
+  }
+  h1 { font-size: 30px; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin-bottom: 28px; }
+  h2 { font-size: 20px; letter-spacing: -0.3px; margin: 34px 0 10px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 4px 20px;
+    margin: 14px 0;
+  }
+  details { border-bottom: 1px solid var(--line); padding: 12px 0; }
+  details:last-child { border-bottom: none; }
+  summary { font-weight: 650; cursor: pointer; }
+  summary::marker { color: var(--accent); }
+  details p { color: var(--muted); margin: 10px 0 2px; }
+  a { color: var(--accent); }
+  .cta {
+    display: block;
+    background: var(--accent);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin: 24px 0 8px;
+  }
+  .hint { color: var(--muted); font-size: 14px; text-align: center; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">Fluck Ledger</span>
+  <h1>Support &amp; FAQ</h1>
+  <div class="sub">Answers to the common questions — and a direct line to us if
+  yours isn't here.</div>
+
+  <h2>Frequently asked questions</h2>
+  <div class="card">
+    <details open>
+      <summary>How is "cost per egg" calculated?</summary>
+      <p>Total expenses in the selected period divided by total eggs collected
+      in that period. The Insights tab also shows a <em>net</em> figure that
+      subtracts your egg-sale income — if it goes negative, congratulations,
+      your flock is profitable.</p>
+    </details>
+    <details>
+      <summary>Do I have to assign eggs to individual hens?</summary>
+      <p>No — the daily total is all that's required. Per-hen attribution is
+      optional: open a day in the Egg log and tally who laid. It powers the
+      per-hen stats and the "top layer" insight.</p>
+    </details>
+    <details>
+      <summary>How does molt tracking work?</summary>
+      <p>Open a hen's profile and tap <em>Start molt</em> when the feathers
+      start flying, and <em>Mark molt finished</em> when she's back in
+      business. The app keeps a history of every molt with its duration.</p>
+    </details>
+    <details>
+      <summary>Can I get my data out?</summary>
+      <p>Yes. Settings → <em>Export everything as CSV</em> produces four
+      spreadsheet-ready files (eggs, hens, expenses, sales) via the standard
+      iOS share sheet.</p>
+    </details>
+    <details>
+      <summary>Is my data backed up anywhere?</summary>
+      <p>Your data lives only on your device — the app has no servers and no
+      accounts (see our <a href="https://fluckledgerrichard.github.io/fluck-ledger-privacy/">privacy
+      policy</a>). A device backup (iCloud or computer) includes the app's data
+      like any other app. CSV export is a good periodic safety net too.</p>
+    </details>
+    <details>
+      <summary>What's the sample data for?</summary>
+      <p>It's a demo flock so you can explore the app with realistic numbers.
+      Remove it anytime with Settings → <em>Remove sample data</em> — anything
+      you added yourself is kept.</p>
+    </details>
+    <details>
+      <summary>I found a bug / I want a feature!</summary>
+      <p>Wonderful — that's what the button below is for. Bug reports with a
+      quick description of what you did and what happened are gold.</p>
+    </details>
+  </div>
+
+  <h2>Contact us</h2>
+  <p>The fastest way to reach us is the public issue tracker — no account
+  data, no forms, and you can see what others have already asked:</p>
+  <a class="cta" href="https://github.com/fluckledgerrichard/fluck-ledger-support/issues">Open the issue tracker</a>
+  <p class="hint">A free GitHub account is required to post. We typically
+  respond within a few days.</p>
+
+  <footer>© 2026 Fluck Ledger · <a href="https://fluckledgerrichard.github.io/fluck-ledger-privacy/">Privacy policy</a></footer>
+</div>
+</body>
+</html>
